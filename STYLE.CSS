@@ -1,0 +1,111 @@
+/* Reset de estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte e cor básica */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Container centralizado */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Seção principal com cards */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+    flex-wrap: wrap; /* Para tornar responsivo */
+}
+
+/* Estilo dos cards */
+.card {
+    width: 48%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Imagem nos cards */
+.card img {
+    width: 100%;
+    height: 200x;
+    object-fit: cover;
+}
+
+/* Texto nos cards */
+.text {
+    padding: 20px;
+}
+
+.text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.text p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+}
